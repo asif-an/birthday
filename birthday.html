@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday 🎉</title>
+  <style>
+    body {
+      background-color: #ffe6ea;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .profile-pic {
+        position: relative;
+        top: 100px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    .main-gif {
+      width: 220px;
+      border-radius: 12px;
+      margin: 20px auto 10px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .buttons {
+      margin: 20px 0;
+    }
+
+    .buttons label {
+      background-color: #fff;
+      padding: 12px 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .buttons label:hover {
+      background-color: #fbdde6;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .response {
+      display: none;
+      margin-top: 30px;
+    }
+
+    #thankyou:checked ~ .thankyou-msg {
+      display: block;
+    }
+
+    #cute:checked ~ .cute-msg {
+      display: block;
+    }
+
+    .response img {
+      width: 180px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="n.png" alt="Birthday Person Photo" class="profile-pic" />
+  <img src="https://media.tenor.com/q9Wzd6R9MiUAAAAC/cute-cry.gif" alt="Cute Crying Bear" class="main-gif" />
+
+  <h1>Happy Birthday Tambdi ! 🥳</h1>
+  <p>Naruto avrige huttu habbada haardika shubhashayagalu ! 🎂✨</p>
+
+  <input type="radio" name="show" id="thankyou">
+  <input type="radio" name="show" id="cute">
+
+  <div class="buttons">
+    <label for="thankyou">Thank You 😊</label>
+    <label for="cute">So Cute! 💖</label>
+  </div>
+
+  <div class="response thankyou-msg">
+    <p>You're most welcome! 🥰<br>
+    Nivu yavattu hige nag nagutta eri! 💖</p>
+  </div>
+
+  <div class="response cute-msg">
+    <p>Hehe, thanks! 🐾😍</p>
+  </div>
+
+</body>
+</html>
